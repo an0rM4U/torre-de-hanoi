@@ -69,7 +69,7 @@ def main():
                     print("Número inválido. Por favor, entre com um número maior que zero.")
                     continue
                 
-                start_time = time.time()  # Start time
+                start_time = time.time()
                 
                 torre_A = {'nome': 'A', 'conteudo': list(range(n, 0, -1))}
                 torre_B = {'nome': 'B', 'conteudo': []}
@@ -79,7 +79,7 @@ def main():
                 Mostre_Torres()
                 Hanoi(n, torre_A, torre_B, torre_C)
                 
-                end_time = time.time()  # End time
+                end_time = time.time()
                 runtime = end_time - start_time
                 
                 print(f"\nNúmero de discos: {n}"
