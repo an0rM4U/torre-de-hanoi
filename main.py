@@ -48,7 +48,8 @@ def Hanoi(n, torre1, torre2, torreAux):
     # Resolve o problema das Torres de Hanoi, movendo os discos da torre 1 para a
     # torre 2, utilizando a torre auxiliar.
     # Se n == 1, move o disco da torre 1 para a torre 2.
-    # Caso contrário, move o disco n-1 da torre 1 para a torre auxiliar; o disco n da torre 1 para a torre 2; e finalmente, o disco n-1 da torre auxiliar para a torre 2.
+    # Caso contrário, move o disco n-1 da torre 1 para a torre auxiliar; o disco n 
+    # da torre 1 para a torre 2; e finalmente, o disco n-1 da torre auxiliar para a torre 2.
     if n == 1:
         Movimente(n, torre1, torre2)
         Mostre_Torres()
