@@ -1,7 +1,9 @@
 # 🏰 Torre de Hanoi
 
 👤 Criado por: an0rm4u
+
 📅 Data de criação: 7/9/2024, 22h47m17s
+
 
 Este programa resolve o quebra-cabeça da Torre de Hanoi. A Torre de Hanoi é um quebra-cabeça matemático que consiste em três hastes e um número de discos de tamanhos diferentes. O objetivo do quebra-cabeça é mover a pilha inteira de discos de uma haste para outra, seguindo estas regras:
 
