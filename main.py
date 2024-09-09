@@ -51,9 +51,6 @@ def Hanoi(n, torre1, torre2, torreAux):
     # Se n == 1, move o disco da torre 1 para a torre 2.
     # Caso contrário, move o disco n-1 da torre 1 para a torre auxiliar; o disco n 
     # da torre 1 para a torre 2; e finalmente, o disco n-1 da torre auxiliar para a torre 2.
-    # Registra o tempo de execução do algoritmo para fins de análise de eficiência.
-    # Imprime os movimentos efetivamente realizados pela função e compara com o 
-    # esperado para a solução conhecida ao problema das Torres.
     if n == 1:
         Movimente(n, torre1, torre2)
         Mostre_Torres()
@@ -64,6 +61,10 @@ def Hanoi(n, torre1, torre2, torreAux):
         Hanoi(n-1, torreAux, torre2, torre1)
 
 def main():
+    # Executa o código principal do programa.
+    # Registra o tempo de execução do algoritmo para fins de análise de eficiência.
+    # Imprime os movimentos efetivamente realizados pela função e compara com o 
+    # esperado para a solução conhecida ao problema das Torres.
     global torre_A, torre_B, torre_C, movimentos
     try:
         while True:
