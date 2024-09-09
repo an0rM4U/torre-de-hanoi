@@ -5,7 +5,6 @@ def Movimente(k, origem, destino):
     # Recebe o disco k, sendo movimentado, e os dicionarios torre1 e torre2, que contém
     # o nome da torre e a lista de discos da torre.
     # Remove o disco da torre1 e o adiciona na torre2.
-    # Imprime a movimentação em negrito e vermelho.
     if k not in origem["conteudo"]:
         print(f'Erro: Disco {k} não está na torre {origem["nome"]}.')
         exit(1)
@@ -25,6 +24,8 @@ def Mostre_Torres():
     # o nome da torre e a lista de discos da torre.
     # Imprime os discos de cada torre, de cima para baixo.
     # Se a torre não tiver disco, imprime uma string vazia.
+    # Utiliza um dicionário auxiliar para colorir as torres a fim de
+    # facilitar a leitura humana do terminal.
     global torre_A, torre_B, torre_C
     n = max(len(torre_A["conteudo"]), len(torre_B["conteudo"]), len(torre_C["conteudo"]))
     colors = {
@@ -50,6 +51,9 @@ def Hanoi(n, torre1, torre2, torreAux):
     # Se n == 1, move o disco da torre 1 para a torre 2.
     # Caso contrário, move o disco n-1 da torre 1 para a torre auxiliar; o disco n 
     # da torre 1 para a torre 2; e finalmente, o disco n-1 da torre auxiliar para a torre 2.
+    # Registra o tempo de execução do algoritmo para fins de análise de eficiência.
+    # Imprime os movimentos efetivamente realizados pela função e compara com o 
+    # esperado para a solução conhecida ao problema das Torres.
     if n == 1:
         Movimente(n, torre1, torre2)
         Mostre_Torres()
