@@ -32,4 +32,4 @@ Contribuições são bem-vindas! Se você encontrar algum problema ou tiver suge
 
 ## 🙏 Agradecimentos
 
-Este programa foi desenvolvido como parte do curso MAC0122 - Princípios de Desenvolvimento de Algoritmos na IME-USP.
+Este programa foi desenvolvido como parte do curso MAC0122 - Princípios de Desenvolvimento de Algoritmos, do curso Bacharelado em Matemática Aplicada e Computacional do Instituto de Matemática e Estatística da Universidade de São Paulo - IME-USP (2024).
